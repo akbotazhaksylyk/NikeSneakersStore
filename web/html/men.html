@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Men's Collection</title> <!-- The title of the webpage, shown in the browser tab. -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Link to an external CSS file for styling. -->
+
+    <!-- Bootstrap's CSS framework is included for a responsive grid layout and ready-made components. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library for simplifying JavaScript code, particularly for DOM manipulation and event handling. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- The favicon for the webpage, using a Nike logo. -->
+    <link rel="icon" type="image/png" href="../../media/logo.webp">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <!-- Nike logo image acts as a link to the homepage. -->
+                    <a href="index.html">
+                        <img src="../../media/logo.webp" alt="Nike Logo" style="height: 50px;"> <!-- Adjust height as needed -->
+                    </a>
+                </li>
+                <!-- Navigation links to various sections of the website. -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men's Collection</a></li>
+                <li><a href="women.html">Women's Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- A toggle button for switching between light and dark mode views. -->
+                <li class="dark-mode-toggle">
+                    <button id="darkModeToggle">Dark Mode</button>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- A section introducing the Men's Sneakers Collection, centered text for emphasis. -->
+            <section class="row justify-content-center my-5">
+                <div class="col-12">
+                    <h1 class="text-center display-4 font-weight-bold">Men's Sneakers Collection</h1>
+                    <p class="text-center lead">Discover our exclusive range of sneakers for men.</p>
+                </div>
+            </section>
+
+            <section class="row">
+                <!-- Dynamic content displaying individual products in a card layout. Each card includes an image, title, price, and an "Add to Cart" button. -->
+                <!-- Bootstrap's responsive columns ensure the layout adjusts across different screen sizes. -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/08f113fb-396f-4445-a89b-f82752a7cb82/air-max-90-g-golf-shoe-hxtVmz.png"
+                            alt="Nike Sneaker 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max 90 G Golf</h5>
+                            <p class="card-text">$150</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ff7bf3f3-b63e-4fa2-9149-b679ba644c33/air-max-ap-mens-shoes-5gGbGq.png"
+                            alt="Nike Sneaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max AP</h5>
+                            <p class="card-text">$120</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-shoes-WrLlWX.png"
+                            alt="Nike Sneaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Force 1 '07</h5>
+                            <p class="card-text">$130</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1af9c87c-6e11-4bc6-ad66-648558bc49b7/vaporfly-3-mens-road-racing-shoes-8DD182.png"
+                            alt="Nike Sneaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Vaporfly 3</h5>
+                            <p class="card-text">$140</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/dunk-low-retro-shoe-66RGqF.png"
+                            alt="Nike Sneaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Dunk Low Retro</h5>
+                            <p class="card-text">$130</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9caabd31-67b5-4ce6-84c4-b2cd35f10292/air-max-2017-mens-shoes-BVqnkV.png"
+                            alt="Nike Sneaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max</h5>
+                            <p class="card-text">$150</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/air-max-270-shoes-2V5C4p.png"
+                            alt="Nike Sneaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max 270</h5>
+                            <p class="card-text">$140</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/7b6fffc1-ab60-4e91-bff9-3281a3f30d72/air-max-ap-shoes-3Rdq04.png"
+                            alt="Nike Sneaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max AP</h5>
+                            <p class="card-text">$160</p>
+                            <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <!-- A footer stating copyright information. -->
+        <p>&copy; 2024 Nike Sneakers Store. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript files for additional functionality. -->
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.js"></script>
+</body>
+
+</html>

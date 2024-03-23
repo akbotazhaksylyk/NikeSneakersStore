@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Women's Collection</title> <!-- The title of the webpage, shown in the browser tab. -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Link to an external CSS file for styling. -->
+
+    <!-- here we use Bootstrap flex -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- The favicon for the webpage, using a Nike logo. -->
+    <link rel="icon" type="image/png" href="../../media/logo.webp">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <!-- Nike logo image acts as a link to the homepage. -->
+                    <a href="index.html">
+                        <img src="../../media/logo.webp" alt="Nike Logo" style="height: 50px;"> <!-- Adjust height as needed -->
+                    </a>
+                </li>
+                <!-- Navigation links to various sections of the website. -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men's Collection</a></li>
+                <li><a href="women.html">Women's Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- A toggle button for switching between light and dark mode views. -->
+                <li class="dark-mode-toggle">
+                    <button id="darkModeToggle">Dark Mode</button>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <div class="d-flex flex-column align-items-center">
+                <h1 class="text-center display-4 font-weight-bold">Women's Sneakers Collection</h1>
+                <p class="text-center lead">Explore the latest collection of Nike sneakers for women.</p>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/4ff2fe4a-4f74-4189-82f0-3ea780f9389d/air-max-excee-womens-shoes-jKsgMj.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max Excee</h5>
+                        <p class="card-text">$150</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1b629b25-26ec-4d73-a330-da71843d3018/waffle-debut-womens-shoes-5Rl1KL.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Waffle Debut</h5>
+                        <p class="card-text">$140</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/cb32986e-71e0-4b2d-addc-da59ddac1268/court-vision-alta-womens-shoes-TbljXk.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Court Vision Alta</h5>
+                        <p class="card-text">$130</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/2c6ca756-9cf8-4a22-9d7c-e95844bf1383/cortez-womens-shoes-tZtTd5.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Cortez</h5>
+                        <p class="card-text">$140</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/2fe54a46-924e-4ddc-928c-43b0834b1f7f/motiva-womens-walking-shoes-xjwQ6k.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Motiva</h5>
+                        <p class="card-text">$150</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f5c33cc0-c240-4cd4-8437-1a58b2d3d6a1/court-legacy-lift-womens-shoes-x0B6BB.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Court Legacy Lift</h5>
+                        <p class="card-text">$130</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/4285f50a-8483-4090-b19e-95fd6ef0b9dd/interact-run-womens-road-running-shoes-v5LlQl.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Interact Run</h5>
+                        <p class="card-text">$130</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/4f13f1f6-b1ff-4e27-b1ef-3c6fe35257cf/interact-run-road-running-shoes-c21XPX.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Interact Run</h5>
+                        <p class="card-text">$150</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/baaea420-efb3-491d-8c46-af3701e563a4/air-max-90-futura-womens-shoes-kvRZ4h.png"
+                        alt="Product Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max 90 Futura</h5>
+                        <p class="card-text">$140</p>
+                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nike Sneakers Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Sneakers Store</title> <!-- The title of the webpage, shown in the browser tab. -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Link to an external CSS file for styling. -->
+
+    <!-- Bootstrap's CSS framework is included for a responsive grid layout and ready-made components. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- The favicon for the webpage, using a Nike logo. -->
+    <link rel="icon" type="image/png" href="../../media/logo.webp">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <!-- Nike logo image acts as a link to the homepage. -->
+                    <a href="index.html">
+                        <img src="../../media/logo.webp" alt="Nike Logo" style="height: 50px;">
+                        <!-- Adjust height as needed -->
+                    </a>
+                </li>
+                <!-- Navigation links to various sections of the website. -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men's Collection</a></li>
+                <li><a href="women.html">Women's Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- A toggle button for switching between light and dark mode views. -->
+                <li class="dark-mode-toggle">
+                    <button id="darkModeToggle">Dark Mode</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="video-container">
+            <video id="myVideo" autoplay muted loop>
+                <source src="../../media/v1.mp4" type="video/mp4">
+            </video>
+
+            <!-- text on the video -->
+            <div id="video-message">
+                <p id="message-one" class="video-message">Unleashing Innovation with Every Step</p>
+                <p id="message-two" class="video-message">Join us on a journey where fashion meets function in the realm
+                    of
+                    sneakers.</p>
+            </div>
+        </div>
+
+        <!-- pop up when user is not active -->
+        <div id="inactivityModal" class="inactivity-modal" style="display:none;">
+            <p>Are you still there?</p>
+            <button onclick="hidePopUp()">Yes, I'm here</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Brand logo and introductory text -->
+        <section class="brand-introduction text-center my-5">
+            <img class="nike_logo" src="../../media/logo.webp" alt="Nike Logo"
+                style="max-width: 400px; height: auto; margin-top: 100px;">
+            <!-- Adjust size as needed -->
+            <h2 class="text-center display-4 font-weight-bold">Discover the Exclusive US Nike Legacy in Kazakhstan</h2>
+            <p class="text-center lead">Welcome to the only official US Nike store in Kazakhstan. Immerse yourself in
+                our meticulously curated collection of premium footwear. Here, innovation meets elegance, offering you
+                an unparalleled selection that epitomizes both exceptional performance and timeless style. Join us to
+                explore iconic designs and the latest trends, all in one authentic destination.</p>
+        </section>
+
+        <!-- flexbox -->
+        <section class="featured-products">
+            <div class="interactive-banner d-flex flex-column align-items-center justify-content-center my-4 mb-5">
+                <img id="promo-image" src="" alt="Promotional Image" class="img-fluid">
+                <p id="promo-message" class="text-center mt-3"></p>
+            </div>
+
+            <h2 class="featured-products-title">Featured Products</h2>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/08f113fb-396f-4445-a89b-f82752a7cb82/air-max-90-g-golf-shoe-hxtVmz.png"
+                    alt="Nike Sneaker 1">
+                <h3>Nike Air Max</h3>
+                <p>$150</p>
+            </div>
+            <div class="product">
+                <img src="https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/phtxk7gcbggxsczgyemw/nike-react-element-55-black-white-release-date.jpg"
+                    alt="Nike Sneaker 2">
+                <h3>Nike React Element</h3>
+                <p>$120</p>
+            </div>
+        </section>
+
+        <section class="newsletter-signup">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn newsletter-signup pulse">Subscribe</button>
+            </form>
+        </section>
+        </div>
+
+        <button id="scrollToTopBtn">Scroll to Top</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nike Sneakers Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

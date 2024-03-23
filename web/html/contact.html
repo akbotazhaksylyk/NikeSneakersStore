@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- Defines the document type and version of HTML -->
+<html lang="en"> <!-- Starts the HTML document and specifies the language as English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatible with IE browser edge mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta, scales for mobile -->
+    <title>Contact Us</title> <!-- Title of the webpage shown in the browser tab -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Link to external CSS file for styling -->
+    <link rel="icon" type="image/png" href="../../media/logo.webp"> <!-- Favicon for the website -->
+</head>
+
+<body>
+    <header> <!-- Header section of the webpage -->
+        <nav> <!-- Navigation bar -->
+            <ul> <!-- Unordered list for navigation links -->
+                <li> <!-- List item -->
+                    <a href="index.html"> <!-- Link to the homepage -->
+                        <img src="../../media/logo.webp" alt="Nike Logo" style="height: 50px;"> <!-- Nike logo with specified height -->
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li> <!-- Navigation link to the homepage -->
+                <li><a href="men.html">Men's Collection</a></li> <!-- Navigation link to the men's collection page -->
+                <li><a href="women.html">Women's Collection</a></li> <!-- Navigation link to the women's collection page -->
+                <li><a href="contact.html">Contact</a></li> <!-- Navigation link to the contact page -->
+                <li class="dark-mode-toggle"> <!-- List item for dark mode toggle button -->
+                    <button id="darkModeToggle">Dark Mode</button> <!-- Button to toggle dark mode -->
+                </li>
+            </ul>
+        </nav>        
+        <div class="header-space"></div> <!-- Placeholder div for spacing after the navbar -->
+    </header>
+
+    <main> <!-- Main content section of the webpage -->
+        <section class="contact-section"> <!-- Contact section with a class for styling -->
+            <h1>Contact Us</h1> <!-- Section heading -->
+            <p>If you have any questions or need support, please contact us using the form below.</p> <!-- Introductory text -->
+            <div class="contact-form"> <!-- Div container for the contact form -->
+                <form> <!-- HTML form for submitting contact information -->
+                    <label for="name">Name:</label> <!-- Label for the name input -->
+                    <input type="text" id="name" name="name" onfocus="this.style.borderColor='#f44336'" onblur="this.style.borderColor='#ccc'" required> <!-- Text input for name with focus and blur styles -->
+
+                    <label for="email">Email:</label> <!-- Label for the email input -->
+                    <input type="email" id="email" name="email" required> <!-- Email input field -->
+
+                    <label for="message">Message:</label> <!-- Label for the message textarea -->
+                    <textarea id="message" name="message" required></textarea> <!-- Textarea for the message -->
+
+                    <button onclick="document.getElementById('test-audio').play()">Send Message</button> <!-- Button to submit the form and play audio -->
+                    <audio id="test-audio" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio> <!-- Audio element for the submit sound -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Footer section of the webpage -->
+        <p>&copy; 2024 Nike Sneakers Store. All Rights Reserved.</p> <!-- Copyright notice -->
+    </footer>
+
+    <script src="../js/script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+
+</html>
